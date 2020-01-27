@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','MovieController@index');
+Route::get('/detail/{id}','MovieController@show');
