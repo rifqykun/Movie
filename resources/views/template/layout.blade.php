@@ -70,9 +70,9 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item" href="/movie">Movie List</a>
-            <a class="collapse-item" href="cards.html">City List</a>
-            <a class="collapse-item" href="cards.html">Genre List</a>
-            <a class="collapse-item" href="cards.html">Time List</a>
+            <a class="collapse-item" href="/city">City List</a>
+            <a class="collapse-item" href="/genre">Genre List</a>
+            <a class="collapse-item" href="/time">Time List</a>
           </div>
         </div>
       </li>
@@ -234,6 +234,7 @@
 
   <!-- Bootstrap core JavaScript-->
   <script src="{{asset('tmp/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('js/my.js')}}"></script>
   <script src="{{asset('tmp/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
   <!-- Core plugin JavaScript-->

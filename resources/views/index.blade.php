@@ -28,8 +28,8 @@
                 <div class="card-body">
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Jumlah Kota Terdaftar</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">{{$kota}}</div>
                     </div>
                     <div class="col-auto">
                     <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -70,15 +70,15 @@
 <!-- table movie -->
 <div class="container">
 <h3>Movie List</h3>
-    <table class="table table-hover">
-        <thead>
+    <table class="table table-striped">
+        <thead class="thead-dark">
             <tr>
                 <th>Title</th>
                 <th>Description</th>
                 <th>Cast</th>
                 <th>City</th>
                 <th>Genre</th>
-                <th>Time</th>
+                <th>Show Time</th>
             </tr>
         </thead>
         <tbody>

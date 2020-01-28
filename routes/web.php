@@ -14,3 +14,4 @@
 Route::get('/','IndexController@index');
 Route::get('/detail/{id}','IndexController@show');
 Route::get('/movie','MovieController@index');
+Route::get('/city','CityController@index');

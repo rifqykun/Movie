@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\movie;
-use App\city;
 
-class IndexController extends Controller
+class GenreController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +13,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $movie = movie::all();
-        $jumlah = movie::all()->count();
-        $kota = city::all()->count();
-        return view("index", compact('movie', 'jumlah', 'kota'));
+        //
     }
 
     /**
@@ -50,8 +45,7 @@ class IndexController extends Controller
      */
     public function show($id)
     {
-        $movie = movie::find($id);
-        return view('detail', compact('movie'));
+        //
     }
 
     /**

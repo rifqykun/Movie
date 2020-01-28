@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\movie;
+use App\city;
+use App\genre;
+use App\time;
 
 class MovieController extends Controller
 {
@@ -15,7 +18,10 @@ class MovieController extends Controller
     public function index()
     {
         $movie = movie::all();
-        return view("movie.movie", compact('movie'));
+        $city = city::all();
+        $genre = genre::all();
+        $time = time::all();
+        return view("movie.movie", compact('movie', 'city', 'genre', 'time'));
     }
 
     /**
