@@ -48,7 +48,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="/">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Movie Dashboard</span></a>
       </li>
@@ -65,12 +65,14 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-book"></i>
-          <span>Movie</span>
+          <span>Movie Data</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="/book">Movie List</a>
-            <a class="collapse-item" href="cards.html">Submission List</a>
+            <a class="collapse-item" href="/movie">Movie List</a>
+            <a class="collapse-item" href="cards.html">City List</a>
+            <a class="collapse-item" href="cards.html">Genre List</a>
+            <a class="collapse-item" href="cards.html">Time List</a>
           </div>
         </div>
       </li>

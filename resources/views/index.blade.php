@@ -79,21 +79,17 @@
                 <th>City</th>
                 <th>Genre</th>
                 <th>Time</th>
-                <th>Etc</th>
             </tr>
         </thead>
         <tbody>
         @foreach ($movie as $m)
             <tr>
-                <td style="cursor:pointer">{{$m->title}}</td>
+                <td style="cursor:pointer"><a href="{{url('/detail')}}/{{$m->id}}">{{$m->title}}</a></td>
                 <td>{{$m->description}}</td>
                 <td>{{$m->cast}}</td>
                 <td>{{$m->city->city}}</td>
                 <td>{{$m->genre->genre}}</td>
                 <td>{{$m->time->time}}</td>
-                <td>
-                    <a class="btn btn-success" href="{{url('/detail')}}/{{$m->id}}">Details</a>
-                </td>
             </tr>
         @endforeach
         </tbody>

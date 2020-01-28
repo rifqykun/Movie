@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\movie;
 
-class MovieController extends Controller
+class IndexController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,8 @@ class MovieController extends Controller
     public function index()
     {
         $movie = movie::all();
-        return view("movie.movie", compact('movie'));
+        $jumlah = movie::all()->count();
+        return view("index", compact('movie', 'jumlah'));
     }
 
     /**
@@ -36,16 +37,7 @@ class MovieController extends Controller
      */
     public function store(Request $request)
     {
-        $movie = new movie;
-        $movie->title = $request->title;
-        $movie->description = $request->desc;
-        $movie->cast = $request->cast;
-        $movie->city_id = $request->city;
-        $movie->genre_id = $request->genre;
-        $movie->time_id = $request->time;
-        $movie->save();
-
-        return redirect('/movie');
+        //
     }
 
     /**
@@ -56,7 +48,8 @@ class MovieController extends Controller
      */
     public function show($id)
     {
-        
+        $movie = movie::find($id);
+        return view('detail', compact('movie'));
     }
 
     /**

@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/','MovieController@index');
-Route::get('/detail/{id}','MovieController@show');
+Route::get('/','IndexController@index');
+Route::get('/detail/{id}','IndexController@show');
+Route::get('/movie','MovieController@index');
